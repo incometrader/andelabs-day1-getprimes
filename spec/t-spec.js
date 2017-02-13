@@ -6,6 +6,23 @@ var getPrimes = require("../src/primes");
 	'use strict';
 
 	describe("Generate Prime Numbers from 0 to a number 'n' into an array", function(){
+
+		it("should return [] for `1`", function(){
+			expect(getPrimes(1)).toEqual([]);
+		});
+
+		it("should return 'Invalid input' for booleans and strings", function(){
+			expect(getPrimes(true)).toEqual("Invalid input");
+		});
+
+		it("should return 'You cannot generate prime numbers from 0 to 0' for `0`", function(){
+			expect(getPrimes(0)).toEqual("You cannot generate prime numbers from 0 to 0");
+		});
+
+		it("should return 'Negative integers cannot be prime' for negative numbers", function(){
+			expect(getPrimes(-37)).toEqual("Negative integers cannot be prime");
+		});
+
 		it("should return [2, 3, 5, 7] for `10`", function(){
 			expect(getPrimes(10)).toEqual([2, 3, 5, 7]);
 		});
