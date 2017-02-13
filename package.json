@@ -1,0 +1,27 @@
+{
+  "name": "getprimenumbers",
+  "version": "1.0.0",
+  "description": "Generate Prime numbers from 0 to n. Includes Jasmine tests.",
+  "main": "src/primes",
+  "scripts": {
+    "test": "jasmine"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/incometrader/bootcamp_assignments.git"
+  },
+  "keywords": [
+    "primes",
+    "jasmine",
+    "test"
+  ],
+  "author": "Ignatius Ukwuoma",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/incometrader/bootcamp_assignments/issues"
+  },
+  "homepage": "https://github.com/incometrader/bootcamp_assignments#readme",
+  "devDependencies": {
+    "jasmine": "^2.5.3"
+  }
+}
